@@ -48,8 +48,8 @@ census_df = load_data()
 
 # Write the code to design the web app
 
-st.sidebar.checkbox("Show Raw Data")
-st.subheader("Census Data set")
-st.dataframe(census_df)
-st.dataframe(census_df['income'])
-st.write(f'number of rows and columns of the dataset', {census_df.shape})
+if st.sidebar.checkbox("Show Raw Data"):
+  st.subheader("Census Data set")
+  st.dataframe(census_df)
+  st.dataframe(census_df['income'])
+  st.write(f'number of rows and columns of the dataset', {census_df.shape})
