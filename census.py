@@ -51,5 +51,5 @@ census_df = load_data()
 if st.sidebar.checkbox("Show Raw Data"):
   st.subheader("Census Data set")
   st.dataframe(census_df)
-  st.dataframe(census_df['Income'])
+  st.dataframe(census_df["income"])
   st.write(f'number of rows and columns of the dataset', {census_df.shape})
